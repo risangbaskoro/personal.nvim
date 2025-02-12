@@ -11,7 +11,7 @@ vim.g.have_nerd_font = true
 require 'options'
 
 -- [[ Basic Keymaps ]]
--- require 'keymaps'
+require 'keymaps'
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 -- require 'lazy-bootstrap'
