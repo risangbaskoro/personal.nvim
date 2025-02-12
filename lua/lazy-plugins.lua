@@ -3,24 +3,22 @@
 require('lazy').setup({
     'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   
-    require 'base/plugins/gitsigns',
-    require 'base/plugins/which-key',
-    require 'base/plugins/telescope',
-    require 'base/plugins/lspconfig',
-    require 'base/plugins/conform',
-    require 'base/plugins/cmp',
-    require 'base/plugins/catppuccin',
-    require 'base/plugins/neo-tree',
-    require 'base/plugins/todo-comments',
-    require 'base/plugins/mini',
-    require 'base/plugins/treesitter',
-    require 'base/plugins/autopairs',
+    require 'plugins/gitsigns',
+    require 'plugins/which-key',
+    require 'plugins/telescope',
+    require 'plugins/lspconfig',
+    require 'plugins/conform',
+    require 'plugins/cmp',
+    require 'plugins/catppuccin',
+    require 'plugins/neo-tree',
+    require 'plugins/todo-comments',
+    require 'plugins/mini',
+    require 'plugins/treesitter',
+    require 'plugins/autopairs',
   
-    -- require 'base.plugins.debug',
-    -- require 'base.plugins.indent_line',
-    -- require 'base.plugins.lint',
-  
-    -- { import = 'custom.plugins' },
+    -- require 'plugins.debug',
+    -- require 'plugins.indent_line',
+    -- require 'plugins.lint',
   }, {
     ui = {
       icons = vim.g.have_nerd_font and {} or {
