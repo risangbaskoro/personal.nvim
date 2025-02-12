@@ -9,7 +9,7 @@ require('lazy').setup({
     require 'base/plugins/lspconfig',
     require 'base/plugins/conform',
     require 'base/plugins/cmp',
-    -- require 'base/plugins/tokyonight',
+    require 'base/plugins/catppuccin',
     -- require 'base/plugins/todo-comments',
     -- require 'base/plugins/mini',
     -- require 'base/plugins/treesitter',
