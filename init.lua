@@ -14,7 +14,7 @@ require 'options'
 require 'keymaps'
 
 -- [[ Install `lazy.nvim` plugin manager ]]
--- require 'lazy-bootstrap'
+require 'lazy-bootstrap'
 
 -- [[ Configure and install plugins ]]
 -- require 'lazy-plugins'
