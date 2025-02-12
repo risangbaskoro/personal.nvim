@@ -8,7 +8,7 @@ vim.g.maplocalleader = ' '
 vim.g.have_nerd_font = true
 
 -- [[Settings Options]]
--- require 'options'
+require 'options'
 
 -- [[ Basic Keymaps ]]
 -- require 'keymaps'
