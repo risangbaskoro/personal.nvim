@@ -10,6 +10,7 @@ require('lazy').setup({
     require 'base/plugins/conform',
     require 'base/plugins/cmp',
     require 'base/plugins/catppuccin',
+    require 'base/plugins/neo-tree',
     -- require 'base/plugins/todo-comments',
     -- require 'base/plugins/mini',
     -- require 'base/plugins/treesitter',
@@ -18,7 +19,6 @@ require('lazy').setup({
     -- require 'base.plugins.indent_line',
     -- require 'base.plugins.lint',
     -- require 'base.plugins.autopairs',
-    -- require 'base.plugins.neo-tree',
   
     -- { import = 'custom.plugins' },
   }, {
