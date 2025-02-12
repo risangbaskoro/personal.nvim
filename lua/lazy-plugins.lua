@@ -6,7 +6,7 @@ require('lazy').setup({
     require 'base/plugins/gitsigns',
     require 'base/plugins/which-key',
     require 'base/plugins/telescope',
-    -- require 'base/plugins/lspconfig',
+    require 'base/plugins/lspconfig',
     -- require 'base/plugins/conform',
     -- require 'base/plugins/cmp',
     -- require 'base/plugins/tokyonight',
