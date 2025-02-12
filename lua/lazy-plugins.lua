@@ -8,7 +8,7 @@ require('lazy').setup({
     require 'base/plugins/telescope',
     require 'base/plugins/lspconfig',
     require 'base/plugins/conform',
-    -- require 'base/plugins/cmp',
+    require 'base/plugins/cmp',
     -- require 'base/plugins/tokyonight',
     -- require 'base/plugins/todo-comments',
     -- require 'base/plugins/mini',
