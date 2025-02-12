@@ -13,7 +13,7 @@ require('lazy').setup({
     require 'base/plugins/neo-tree',
     require 'base/plugins/todo-comments',
     require 'base/plugins/mini',
-    -- require 'base/plugins/treesitter',
+    require 'base/plugins/treesitter',
   
     -- require 'base.plugins.debug',
     -- require 'base.plugins.indent_line',
