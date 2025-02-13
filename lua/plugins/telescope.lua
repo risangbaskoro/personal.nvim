@@ -46,9 +46,9 @@ return {
 			vim.keymap.set("n", "<leader><leader>", builtin.buffers, { desc = "[ ] Find existing buffers" })
 			vim.keymap.set(
 				"n",
-				"<leader>fb",
+				"<leader>b",
 				":Telescope file_browser path=%:p:h select_buffer=true<CR>",
-				{ desc = "Telescope [F]ile [B]rowser" }
+				{ desc = "Telescope File [B]rowser" }
 			)
 
 			-- Slightly advanced example of overriding default behavior and theme
