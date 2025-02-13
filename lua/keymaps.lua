@@ -22,6 +22,9 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 vim.keymap.set("n", "<leader>tn", "<cmd>set nu!<CR>", { desc = "[T]oggle Line [N]umber" })
 vim.keymap.set("n", "<leader>tr", "<cmd>set rnu!<CR>", { desc = "[T]oggle [R]elative Line Number" })
 
+-- Buffers
+vim.keymap.set("n", "<leader>x", "<cmd>bd<CR>", { desc = "Close the current buffer" })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
