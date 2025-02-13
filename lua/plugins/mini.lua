@@ -31,7 +31,11 @@ return {
 			end
 
 			-- Simple starter screen
-			require("mini.starter").setup()
+			require("mini.starter").setup({
+				-- Footer
+				footer = [[“We suffer more in imagination than in reality.” 
+        — Seneca. Letters to Lucilius, Letter 13]],
+			})
 		end,
 	},
 }
