@@ -141,6 +141,9 @@ return {
 			-- Ensure the servers and tools above are installed
 			local ensure_installed = vim.tbl_keys(servers or {})
 			vim.list_extend(ensure_installed, {
+				"html",
+				"cssls",
+				"tailwindcss",
 				"stylua", -- Used to format Lua code
 				"pylint",
 				"autopep8",
