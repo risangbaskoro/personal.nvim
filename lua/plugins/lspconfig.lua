@@ -145,6 +145,8 @@ return {
 				"cssls",
 				"tailwindcss",
 				"stylua", -- Used to format Lua code
+				"cpptools",
+				"clang-format",
 				"pylint",
 				"autopep8",
 			})
