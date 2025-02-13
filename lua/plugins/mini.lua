@@ -29,6 +29,9 @@ return {
 			statusline.section_location = function()
 				return "%2l:%-2v"
 			end
+
+			-- Simple starter screen
+			require("mini.starter").setup()
 		end,
 	},
 }
