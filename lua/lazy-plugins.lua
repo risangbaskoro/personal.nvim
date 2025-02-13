@@ -15,6 +15,7 @@ require("lazy").setup({
 	require("plugins/mini"),
 	require("plugins/treesitter"),
 	require("plugins/autopairs"),
+	require("plugins/no-neck-pain"),
 
 	-- require 'plugins.debug',
 	-- require 'plugins.indent_line',
