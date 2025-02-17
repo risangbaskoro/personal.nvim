@@ -17,6 +17,8 @@ require("lazy").setup({
 	require("plugins/autopairs"),
 	require("plugins/no-neck-pain"),
 
+	require("plugins.leetcode"),
+
 	-- require 'plugins.debug',
 	-- require 'plugins.indent_line',
 	-- require 'plugins.lint',
