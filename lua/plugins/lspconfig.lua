@@ -125,7 +125,6 @@ return {
 				-- See `:help lspconfig-all` for a list of all the pre-configured LSPs
 				clangd = {},
 				rust_analyzer = {},
-				ts_ls = {},
 				pylsp = {},
 				lua_ls = {
 					settings = {
@@ -141,9 +140,6 @@ return {
 			-- Ensure the servers and tools above are installed
 			local ensure_installed = vim.tbl_keys(servers or {})
 			vim.list_extend(ensure_installed, {
-				"html",
-				"cssls",
-				"tailwindcss",
 				"stylua", -- Used to format Lua code
 				"cpptools",
 				"clang-format",
