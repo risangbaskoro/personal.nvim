@@ -31,10 +31,35 @@ return {
 			end
 
 			-- Simple starter screen
+			local day_footer = function()
+				local day = vim.fn.strftime("%A")
+				local timer = vim.uv.new_timer()
+				if timer ~= nil then
+					timer:start(
+						0,
+						1000,
+						vim.schedule_wrap(function()
+							if vim.bo.filetype ~= "ministarter" then
+								timer:stop()
+								return
+							end
+							MiniStarter.refresh()
+						end)
+					)
+				end
+
+				return function()
+					if day == "Sunday" then
+						return ("It's %s! Do not code."):format(day)
+					else
+						return ("It's %s. Be creative."):format(day)
+					end
+				end
+			end
+
 			require("mini.starter").setup({
 				-- Footer
-				footer = [[“We suffer more in imagination than in reality.” 
-        — Seneca. Letters to Lucilius, Letter 13]],
+				footer = day_footer(),
 			})
 		end,
 	},
