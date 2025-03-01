@@ -51,6 +51,8 @@ return {
 				return function()
 					if day == "Sunday" then
 						return ("It's %s! Do not code."):format(day)
+					elseif day == "Wednesday" then
+						return ("What a week, huh?\n\nCaptain, it's %s"):format(day)
 					else
 						return ("It's %s. Be creative."):format(day)
 					end
