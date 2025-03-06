@@ -9,7 +9,6 @@ require("lazy").setup({
 	require("plugins/lspconfig"),
 	require("plugins/conform"),
 	require("plugins/cmp"),
-	require("plugins/catppuccin"),
 	require("plugins/neo-tree"),
 	require("plugins/todo-comments"),
 	require("plugins/mini"),
@@ -18,6 +17,10 @@ require("lazy").setup({
 	require("plugins/no-neck-pain"),
 
 	require("plugins.leetcode"),
+
+	require("plugins.themery"),
+	require("plugins.themes.catppuccin"),
+	require("plugins.themes.tokyo-night"),
 
 	-- require 'plugins.debug',
 	-- require 'plugins.indent_line',
