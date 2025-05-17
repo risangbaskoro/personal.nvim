@@ -65,5 +65,7 @@ return {
 			})
 		end,
 	},
+
+	vim.keymap.set("n", "<leader>os", "<cmd>lua MiniStarter.open()<CR>", { desc = "[O]pen Mini.[S]tarter Screen" }),
 }
 -- vim: ts=2 sts=2 sw=2 et
