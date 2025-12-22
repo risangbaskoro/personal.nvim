@@ -9,14 +9,10 @@ require("lazy").setup({
 	require("plugins/lspconfig"),
 	require("plugins/conform"),
 	require("plugins/cmp"),
-	require("plugins/neo-tree"),
 	require("plugins/todo-comments"),
 	require("plugins/mini"),
 	require("plugins/treesitter"),
 	require("plugins/autopairs"),
-	require("plugins/no-neck-pain"),
-
-	require("plugins.leetcode"),
 
 	require("plugins.themery"),
 	require("plugins.themes.catppuccin"),
