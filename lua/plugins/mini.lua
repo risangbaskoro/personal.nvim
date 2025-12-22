@@ -1,7 +1,7 @@
 return {
 	{ -- Collection of various small independent plugins/modules
 		--  Check out: https://github.com/echasnovski/mini.nvim
-		"echasnovski/mini.nvim",
+		"nvim-mini/mini.nvim",
 		config = function()
 			-- Better Around/Inside textobjects
 			--
