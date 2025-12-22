@@ -12,7 +12,6 @@ require("lazy").setup({
 	require("plugins/todo-comments"), -- Highlight todo, notes, etc in comments
 	require("plugins/mini"), -- Collection of various small independent plugins/modules
 	require("plugins/treesitter"), -- Highlight, edit, and navigate code
-	require("plugins/autopairs"), -- Autopairing brackets, etc
 
 	require("plugins.themery"), -- Theme selector
 	require("plugins.themes.catppuccin"),
