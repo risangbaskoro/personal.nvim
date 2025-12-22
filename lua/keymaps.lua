@@ -38,4 +38,10 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end,
 })
 
+-- Toggle inline diagnostics virtual text
+vim.keymap.set("n", "<leader>td", function()
+	local current = vim.diagnostic.config().virtual_text
+	vim.diagnostic.config({ virtual_text = not current })
+end, { desc = "[T]oggle [D]iagnostics Virtual Text" })
+
 -- vim: ts=2 sts=2 sw=2 et
