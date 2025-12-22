@@ -1,14 +1,42 @@
 return {
-	{ -- Change color scheme
-		"catppuccin/nvim",
-		priority = 1000, -- Make sure to load this before all the other start plugins.
-		init = function()
-			-- Load the colorscheme here.
-			vim.cmd.colorscheme("catppuccin-mocha")
-
-			-- You can configure highlights by doing something like:
-			vim.cmd.hi("Comment gui=none")
-		end,
+	"catppuccin/nvim",
+	lazy = true,
+	name = "catppuccin",
+	opts = {
+		lsp_styles = {
+			underlines = {
+				errors = { "undercurl" },
+				hints = { "undercurl" },
+				warnings = { "undercurl" },
+				information = { "undercurl" },
+			},
+		},
+		integrations = {
+			aerial = true,
+			alpha = true,
+			cmp = true,
+			dashboard = true,
+			flash = true,
+			fzf = true,
+			grug_far = true,
+			gitsigns = true,
+			headlines = true,
+			illuminate = true,
+			indent_blankline = { enabled = true },
+			leap = true,
+			lsp_trouble = true,
+			mason = true,
+			mini = true,
+			navic = { enabled = true, custom_bg = "lualine" },
+			neotest = true,
+			neotree = true,
+			noice = true,
+			notify = true,
+			snacks = true,
+			telescope = true,
+			treesitter_context = true,
+			which_key = true,
+		},
 	},
 }
 -- vim: ts=2 sts=2 sw=2 et

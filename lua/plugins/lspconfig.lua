@@ -62,8 +62,7 @@ return {
 					-- Rename the variable under your cursor.
 					map("<leader>rn", vim.lsp.buf.rename, "[R]e[n]ame")
 
-					-- Execute a code action, usually your cursor needs to be on top of an error
-					-- or a suggestion from your LSP for this to activate.
+					-- Execute a code action
 					map("<leader>ca", vim.lsp.buf.code_action, "[C]ode [A]ction", { "n", "x" })
 
 					-- WARN: This is not Goto Definition, this is Goto Declaration.
@@ -141,10 +140,6 @@ return {
 			local ensure_installed = vim.tbl_keys(servers or {})
 			vim.list_extend(ensure_installed, {
 				"stylua", -- Used to format Lua code
-				"cpptools",
-				"clang-format",
-				"pylint",
-				"autopep8",
 			})
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 

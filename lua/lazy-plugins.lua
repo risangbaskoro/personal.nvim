@@ -3,28 +3,20 @@
 require("lazy").setup({
 	"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
 
-	require("plugins/gitsigns"),
-	require("plugins/which-key"),
-	require("plugins/telescope"),
+	require("plugins/gitsigns"), -- Show git hint for hunks
+	require("plugins/which-key"), -- Show keymap hints
+	require("plugins/telescope"), -- fuzzy finder over lists
 	require("plugins/lspconfig"),
 	require("plugins/conform"),
 	require("plugins/cmp"),
-	require("plugins/neo-tree"),
 	require("plugins/todo-comments"),
 	require("plugins/mini"),
-	require("plugins/treesitter"),
+	-- require("plugins/treesitter"),
 	require("plugins/autopairs"),
-	require("plugins/no-neck-pain"),
-
-	require("plugins.leetcode"),
 
 	require("plugins.themery"),
 	require("plugins.themes.catppuccin"),
 	require("plugins.themes.tokyo-night"),
-
-	-- require 'plugins.debug',
-	-- require 'plugins.indent_line',
-	-- require 'plugins.lint',
 }, {
 	ui = {
 		icons = vim.g.have_nerd_font and {} or {
