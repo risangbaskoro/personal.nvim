@@ -13,9 +13,6 @@ require("lazy").setup({
 	require("plugins/mini"), -- Collection of various small independent plugins/modules
 	require("plugins/treesitter"), -- Highlight, edit, and navigate code
 
-	require("plugins.themery"), -- Theme selector
-	require("plugins.themes.catppuccin"),
-	require("plugins.themes.tokyo-night"),
 }, {
 	ui = {
 		icons = vim.g.have_nerd_font and {} or {
